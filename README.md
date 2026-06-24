@@ -1,7 +1,7 @@
 # 💻 Ecommerce Web Performance & Purchase Behavior Analysis | SQL, BigQuery  
 
 <p align="center">
-  <img src="documents/woo-commerce-development-500x500.webp" width="100%">
+  <img src="documents/woo-commerce-development-500x500.webp" width="80%">
 </p>
 
 **Tools Used:** SQL
