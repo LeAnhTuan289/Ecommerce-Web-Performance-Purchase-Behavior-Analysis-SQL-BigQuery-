@@ -45,7 +45,12 @@ This project uses **SQL** and **BigQuery** to analyze the performance of an e-co
 
 ## ⚒️ Main Process
 
-### 🔍 Calculate total visit, pageview, transaction and revenue for January, February and March 2017 (order by month).
+Below is the execution of all 8 operational queries. They are presented here with their logic and a sample of their output results so you can explore the insights directly.
+
+<details>
+<summary><b>Query 1: Monthly Traffic Overview</b> (Click to expand)</summary>
+
+*Question: Calculate total visits, pageviews, and transactions for January, February, and March 2017.*
 
 The goal of this analysis is to calculate the **total number of visits, pageviews, transactions, and revenue** for each month (January, February, and March) in 2017, based on the data provided. The results will be ordered by month to observe the trends and variations in website performance over these three months.
 
@@ -66,6 +71,8 @@ order by month;
 ### 💡 Queries result
 
 ![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
+
+</details>
 
 ### 🔍 Calculate bounce rate traffic source in July 2017).
 
