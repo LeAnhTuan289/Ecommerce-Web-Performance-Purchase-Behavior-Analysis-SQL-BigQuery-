@@ -132,7 +132,7 @@ order by time_type
 
 ### 💡 Queries result
 
-[!Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/7adc1982f3b60d9d95a7d7ce0dd30876478175d1/documents/q3.png)
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ### 🔍 Calculate average number of pageviews by purchaser type
 
@@ -178,7 +178,7 @@ order by pd.month;
 
 ### 💡 Queries result
 
-!Image
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ### 🔍 Calculate average number of transactions per user that made a purchase in July 2017
 
@@ -200,7 +200,7 @@ group by month;
 
 ### 💡 Queries result
 
-!Image
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ### 🔍 Calculate average amount of money spent per session. Only include purchaser data in July 2017
 
@@ -225,7 +225,7 @@ group by month;
 
 ### 💡 Queries result
 
-!Image
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ### 🔍 Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered.
 
@@ -261,7 +261,7 @@ ORDER BY quantity DESC;
 
 ### 💡 Queries result
 
-!Image
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ### 🔍 Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017.
 
@@ -306,7 +306,7 @@ ORDER BY month;
 
 ### 💡 Queries result
 
-!Image
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ## 🔎 Final Conclusion & Recommendations
 
