@@ -1,6 +1,8 @@
 # 💻 Ecommerce Web Performance & Purchase Behavior Analysis | SQL, BigQuery  
 
-![image](https://5.imimg.com/data5/KC/YN/GLADMIN-60641523/e-commerce-development-services-500x500.png)
+<p align="center">
+  <img src="documents/ewallet-cover-image.jpg" width="100%">
+</p>
 
 **Tools Used:** SQL
 
