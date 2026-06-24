@@ -65,7 +65,7 @@ order by month;
 
 ### 💡 Queries result
 
-Image
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ### 🔍 Calculate bounce rate traffic source in July 2017).
 
