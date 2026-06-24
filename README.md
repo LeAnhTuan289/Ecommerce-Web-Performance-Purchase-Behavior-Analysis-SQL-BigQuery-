@@ -74,7 +74,10 @@ order by month;
 
 </details>
 
-### 🔍 Calculate bounce rate traffic source in July 2017).
+<details>
+<summary><b>Query 2: Bounce Rate by Traffic Source</b> (Click to expand)</summary>
+
+*Question: Calculate the bounce rate per traffic source in July 2017.*
 
 The goal of this analysis is to calculate the **bounce rate** for different **traffic sources in July 2017**. By analyzing bounce rates across various traffic sources, we aim to identify which sources lead to higher user engagement and which may need optimization to improve user retention and website performance.
 
@@ -94,6 +97,8 @@ ORDER BY total_visits DESC;
 ### 💡 Queries result
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/d87e0decbd98c30c541c54f4a0c6a032c388b604/documents/q2.png)
+
+</details>
 
 ### 🔍 Calculate revenue by traffic source by week, by month in June 2017
 
