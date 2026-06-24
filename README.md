@@ -299,7 +299,7 @@ ORDER BY quantity DESC;
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q7.png)
 
-<details/>
+</details>
 
 <details>
 <summary><b>Query 8: E-Commerce Conversion Funnel</b> (Click to expand)</summary>
@@ -349,7 +349,7 @@ ORDER BY month;
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q8.png)
 
-<details/>
+</details>
 
 ## 🔎 Final Conclusion & Recommendations
 
