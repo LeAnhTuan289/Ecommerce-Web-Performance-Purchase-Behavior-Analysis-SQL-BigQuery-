@@ -1,6 +1,7 @@
 # 💻 Ecommerce Web Performance & Purchase Behavior Analysis | SQL, BigQuery  
 
 ![image](https://5.imimg.com/data5/KC/YN/GLADMIN-60641523/e-commerce-development-services-500x500.png)
+
 **Tools Used:** SQL
 
 ## 📑 Table of Contents
