@@ -86,7 +86,7 @@ ORDER BY total_visits DESC;
 
 ### 💡 Queries result
 
-![Image(https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/d87e0decbd98c30c541c54f4a0c6a032c388b604/documents/q2.png)
+![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/d87e0decbd98c30c541c54f4a0c6a032c388b604/documents/q2.png)
 
 ### 🔍 Calculate revenue by traffic source by week, by month in June 2017
 
