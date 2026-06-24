@@ -86,7 +86,7 @@ ORDER BY total_visits DESC;
 
 ### 💡 Queries result
 
-!Image
+![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
 ### 🔍 Calculate revenue by traffic source by week, by month in June 2017
 
@@ -132,7 +132,7 @@ order by time_type
 
 ### 💡 Queries result
 
-!Image
+[!Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/7adc1982f3b60d9d95a7d7ce0dd30876478175d1/documents/q3.png)
 
 ### 🔍 Calculate average number of pageviews by purchaser type
 
