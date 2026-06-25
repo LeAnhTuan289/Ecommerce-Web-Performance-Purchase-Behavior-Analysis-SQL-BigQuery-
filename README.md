@@ -3,6 +3,7 @@
 <p align="center">
   <img src="documents/woo-commerce-development-500x500.webp" width="80%">
 </p>
+**Author:** Le Anh Tuan
 
 **Tools Used:** SQL
 
