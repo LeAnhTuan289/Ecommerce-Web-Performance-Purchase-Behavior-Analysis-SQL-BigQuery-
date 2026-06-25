@@ -9,7 +9,8 @@
 ## 📑 Table of Contents
 
 [📌 Background & Overview](#-background--overview)  
-[📂 Dataset Description & Data Structure](#-dataset-description--data-structure)  
+[📂 Dataset Description & Data Structure](#-dataset-description--data-structure) 
+[🗂️ Project Structure](#️-project-structure)
 [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)  
 
 ## Background & Overview
@@ -350,6 +351,30 @@ ORDER BY month;
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q8.png)
 
 </details>
+
+## 🗂️ Project Structure
+
+```text
+├── documents/
+│   ├── q1.png        # Execution results for Q1
+│   ├── q2.png        # Execution results for Q2
+│   ├── q3.png        # Execution results for Q3
+│   ├── q4.png        # Execution results for Q4
+│   ├── q5.png        # Execution results for Q5
+│   ├── q6.png        # Execution results for Q6
+│   ├── q7.png        # Execution results for Q7
+│   └── q8.png        # Execution results for Q8
+├── query/
+│   ├── q01_monthly_traffic_overview.sql
+│   ├── q02_bounce_rate_by_source.sql
+│   ├── q03_revenue_by_source_week_month.sql
+│   ├── q04_avg_pageviews_by_purchaser_type.sql
+│   ├── q05_avg_transactions_per_user.sql
+│   ├── q06_avg_revenue_per_session.sql
+│   ├── q07_cross_sell_products.sql
+│   └── q08_conversion_funnel_cohort.sql
+└── README.md
+```
 
 ## 🔎 Final Conclusion & Recommendations
 
