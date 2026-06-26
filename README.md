@@ -33,18 +33,28 @@ This project uses **SQL** and **BigQuery** to analyze the performance of an e-co
 
 ## 📂 Dataset Description & Data Structure
 
-**📌 Data Source**: The sample data is from **Google Analytics 4 (GA4)**, exported to **BigQuery**, including user activity data from the **Google Merchandise Store** e-commerce website.
+This project is an end-to-end data analysis performed on **Google's public GA Sessions dataset** (`bigquery-public-data.google_analytics_sample.ga_sessions_2017*`). The dataset contains obfuscated web analytics data from the Google Merchandise Store, a real e-commerce website. 
 
-**📌 Data Size**:
+**Understanding the BigQuery Data Structure:**
+Working with raw Google Analytics data in BigQuery requires specific SQL syntax due to how the data is stored:
+* **Table Wildcards (`*`)**: The data is sharded by day (e.g., `ga_sessions_20170101`). Using the asterisk `*` allows us to query across multiple days/months at once (e.g., `WHERE _table_suffix BETWEEN '0101' AND '0331'`).
+* **Backticks (\`)**: In Google Standard SQL, table paths containing hyphens or special characters (like `bigquery-public-data...`) must be wrapped in backticks.
+* **Complex Data Types (`UNNEST`)**: GA data heavily uses Arrays and Structs to keep data organized at the session level. A single row represents a multi-page session. To analyze individual page views (`hits`) or items carted (`product`), we must use the `UNNEST()` function to flatten these arrays into a tabular format before aggregating.
 
-- **Dataset**: `ga4_obfuscated_sample_ecommerce`
+### Data Dictionary
 
-**📌 How to Access the Data:**
-1. Log in to your **Google Cloud Platform** account and create a new project.
-2. Open the **BigQuery Console** and select your project.
-3. Click on **"Add Data"** in the navigation panel, then choose **"Search a project"**.
-4. In the search bar, enter the project ID: `bigquery-public-data.google_analytics_sample.ga_sessions` and press **Enter**.
-5. Click on the `ga_sessions_` table to explore its structure and data.
+To execute the 8 operational queries in this project, I utilized the core session schema. Below is a targeted data dictionary of the exact fields used in my analysis.
+
+> 🔗 **Full Documentation:** For the complete explanation of all available fields in the GA export schema, please refer to the [Official Google Analytics BigQuery Export schema](https://support.google.com/analytics/answer/3437719?hl=en).
+
+| Schema | Table / Struct | Columns Used in Queries | Business Purpose in Analysis |
+| :--- | :--- | :--- | :--- |
+| **Sessions** | `ga_sessions_2017*` | `fullVisitorId`, `date`, `totals` | Base structure for tracking unique users, cohorts, and aggregate timeline. |
+| **Sessions** | `totals` | `visits`, `pageviews`, `transactions`, `bounces` | Fact metrics for calculating engagement, conversion events, and bounce rates. |
+| **Sessions** | `trafficSource` | `source` | Analyzed to compare traffic quality and revenue performance across channels. |
+| **Hits** | `hits` | `eCommerceAction` | Unnested to trace user steps through the product detail, cart, and checkout. |
+| **Hits** | `eCommerceAction` | `action_type` | Filtered by '2' (View), '3' (Add to Cart), and '6' (Purchase) for the Funnel Analysis. |
+| **Product** | `product` | `v2ProductName`, `productRevenue`, `productQuantity` | Unnested to identify top-selling items, compute revenue, and run cross-sell analysis. |
 
 ## ⚒️ Main Process
 
