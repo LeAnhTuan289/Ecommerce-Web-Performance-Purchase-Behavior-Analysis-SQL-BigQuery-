@@ -8,6 +8,8 @@
 
 **Tools Used:** SQL
 
+---
+
 ## 📑 Table of Contents
 
 [📌 Background & Overview](#-background--overview)  
