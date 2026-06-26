@@ -15,6 +15,8 @@
 [🗂️ Project Structure](#️-project-structure)  
 [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)  
 
+---
+
 ## Background & Overview
 
 ### 📖 What is this project about? What Business Question will it solve?  
@@ -30,6 +32,8 @@ This project uses **SQL** and **BigQuery** to analyze the performance of an e-co
 - ✔️ **Digital Marketing Teams**  
 - ✔️ **E-commerce Managers & Stakeholders**  
 - ✔️ **Business Intelligence Teams**
+
+---
 
 ## 📂 Dataset Description & Data Structure
 
@@ -55,6 +59,8 @@ To execute the 8 operational queries in this project, I utilized the core sessio
 | **Hits** | `hits` | `eCommerceAction` | Unnested to trace user steps through the product detail, cart, and checkout. |
 | **Hits** | `eCommerceAction` | `action_type` | Filtered by '2' (View), '3' (Add to Cart), and '6' (Purchase) for the Funnel Analysis. |
 | **Product** | `product` | `v2ProductName`, `productRevenue`, `productQuantity` | Unnested to identify top-selling items, compute revenue, and run cross-sell analysis. |
+
+---
 
 ## ⚒️ Main Process
 
@@ -364,6 +370,8 @@ ORDER BY month;
 
 </details>
 
+---
+
 ## 🗂️ Project Structure
 
 ```text
@@ -387,6 +395,8 @@ ORDER BY month;
 │   └── q08_conversion_funnel_cohort.sql
 └── README.md
 ```
+
+---
 
 ## 🔎 Final Conclusion & Recommendations
 
