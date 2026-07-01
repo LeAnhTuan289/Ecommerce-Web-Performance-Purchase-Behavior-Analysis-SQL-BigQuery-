@@ -13,9 +13,9 @@
 ## 📑 Table of Contents
 
 [📌 Background & Overview](#-background--overview)  
-[📂 Dataset Description & Data Structure](#-dataset-description--data-structure)  
-[🗂️ Project Structure](#️-project-structure)  
+[📂 Dataset Description & Data Structure](#-dataset-description--data-structure)   
 [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)  
+[🗂️ Project Structure](#️-project-structure) 
 
 ---
 
@@ -24,16 +24,14 @@
 ### 📖 What is this project about? What Business Question will it solve?  
 
 This project uses **SQL** and **BigQuery** to analyze the performance of an e-commerce website, focusing on traffic, engagement, and revenue over time.  
-- ✔️ **Track changes** in traffic, engagement, and revenue.  
-- ✔️ **Breakdown revenue** by traffic source (weekly, monthly).  
-- ✔️ **Compare pageviews** and transactions between purchasers and non-purchasers.  
-- ✔️ **Map the customer journey** from product view to purchase.
+✔️ **Track changes** in traffic, engagement, and revenue.  
+✔️ **Breakdown revenue** by traffic source (weekly, monthly).  
+✔️ **Compare pageviews** and transactions between purchasers and non-purchasers.  
+✔️ **Map the customer journey** from product view to purchase.
 
 ## 👤 Who is this project for?  
-- ✔️ **Data Analysts & Business Analysts**  
-- ✔️ **Digital Marketing Teams**  
-- ✔️ **E-commerce Managers & Stakeholders**  
-- ✔️ **Business Intelligence Teams**
+✔️ **Data Analysts & Business Analysts**  
+✔️ **Digital Marketing Teams**  
 
 ---
 
@@ -68,9 +66,6 @@ To execute the 8 operational queries in this project, I utilized the core sessio
 
 Below is the execution of all 8 operational queries. They are presented here with their logic and a sample of their output results so you can explore the insights directly.
 
-<details>
-<summary><b>Query 1: Monthly Traffic Overview</b> (Click to expand)</summary>
-
 ### 🔍 Question: Calculate total visits, pageviews, and transactions for January, February, and March 2017.
 
 The goal of this analysis is to calculate the **total number of visits, pageviews, transactions, and revenue** for each month (January, February, and March) in 2017, based on the data provided. The results will be ordered by month to observe the trends and variations in website performance over these three months.
@@ -93,11 +88,6 @@ order by month;
 
 ![Image](https://github.com/user-attachments/assets/42eea66b-3f63-46af-9a9f-87d4033262a0)
 
-</details>
-
-<details>
-<summary><b>Query 2: Bounce Rate by Traffic Source</b> (Click to expand)</summary>
-
 ### 🔍 Question: Calculate the bounce rate per traffic source in July 2017.
 
 The goal of this analysis is to calculate the **bounce rate** for different **traffic sources in July 2017**. By analyzing bounce rates across various traffic sources, we aim to identify which sources lead to higher user engagement and which may need optimization to improve user retention and website performance.
@@ -118,11 +108,6 @@ ORDER BY total_visits DESC;
 ### 💡 Queries result
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/d87e0decbd98c30c541c54f4a0c6a032c388b604/documents/q2.png)
-
-</details>
-
-<details>
-<summary><b>Query 3: Revenue by Traffic Source</b> (Click to expand)</summary>
 
 ### 🔍 Question:  Calculate revenue by traffic source by week, by month in June 2017.
 
@@ -170,11 +155,6 @@ order by time_type
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q3.png)
 
-</details>
-
-<details>
-  
-<summary><b>Query 4: Avg Pageviews (Purchaser vs Non-Purchaser)</b> (Click to expand)</summary>
 
 ### 🔍 Question: Calculate average number of pageviews by purchaser type (purchasers vs non-purchasers) in June and July 2017.
 
@@ -222,11 +202,6 @@ order by pd.month;
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q4.png)
 
-</details>
-
-<details>
-<summary><b>Query 5: Avg Transactions per User</b> (Click to expand)</summary>
-
 ### 🔍 Question: Calculate the average number of transactions per user that made a purchase in July 2017.
 
 Calculate the **average number of transactions per user** who made a purchase in **July 2017** to explore the purchasing patterns and frequency of repeat buyers. This will provide a clearer understanding of customer loyalty and help identify opportunities to enhance retention strategies.
@@ -248,11 +223,6 @@ group by month;
 ### 💡 Queries result
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q5.png)
-
-</details>
-
-<details>
-<summary><b>Query 6: Avg Revenue per Session</b> (Click to expand)</summary>
 
 ### 🔍 Question: Calculate the average amount of money spent per session (purchasers only) in July 2017.
 
@@ -278,11 +248,6 @@ group by month;
 ### 💡 Queries result
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q6.png)
-
-</details>
-
-<details>
-<summary><b>Query 7: Cross-sell Analysis (Market Basket)</b> (Click to expand)</summary>
 
 ### 🔍 Question: Calculate other products purchased by customers who also bought "YouTube Men's Vintage Henley" in July 2017.
 
@@ -319,11 +284,6 @@ ORDER BY quantity DESC;
 ### 💡 Queries result
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q7.png)
-
-</details>
-
-<details>
-<summary><b>Query 8: E-Commerce Conversion Funnel</b> (Click to expand)</summary>
 
 ### 🔍 Question: Generate a cohort map of the checkout funnel (Product View → Add to Cart → Purchase) for Jan–Mar 2017.
 
@@ -370,10 +330,27 @@ ORDER BY month;
 
 ![Image](https://github.com/LeAnhTuan289/Ecommerce-Web-Performance-Purchase-Behavior-Analysis-SQL-BigQuery-/blob/44c3bbff1268c641f356453c987c16c18203735c/documents/q8.png)
 
-</details>
 
 ---
 
+
+## 🔎 Final Conclusion & Recommendations
+
+### 📌 Insights
+
+- **Traffic Trends**: The **total visits** in January, February, and March 2017 showed consistent traffic, with March having the highest number of visits (69,931).
+- **Revenue by Source**: **Direct** traffic contributed significantly to revenue in June 2017, with notable contributions from **Google** and **Mail** sources, indicating strong performance from these channels.
+- **Bounce Rate Insights**: Traffic from sources like **phandroid.com** has a high bounce rate of **77.78%**, which suggests that users might not be engaging well with the content on landing pages.
+- **Purchaser Behavior**: Customers who bought the **"YouTube Men's Vintage Henley"** showed interest in related products like **Google Men's Vintage Badge Tee Black**, which presents an opportunity for cross-selling.
+
+### 📌 Recommendations
+
+1. **Optimize Landing Pages for High Bounce Traffic**: Improve pages for sources with high bounce rates (e.g., **phandroid.com**) by enhancing content relevance and reducing page load times.
+2. **Focus on Direct & Paid Traffic**: Increase investment in **Google Ads** and improve brand awareness to leverage high-performing **direct traffic** for better conversions.
+3. **Boost Conversion for Non-Purchasers**: Simplify the checkout process and offer targeted promotions to convert high-pageview, non-purchasing users.
+4. **Maximize Cross-Selling**: Use product recommendations for items like the **"YouTube Men's Vintage Henley"** to drive cross-sales and increase average order value.
+
+---
 ## 🗂️ Project Structure
 
 ```text
@@ -397,21 +374,3 @@ ORDER BY month;
 │   └── q08_conversion_funnel_cohort.sql
 └── README.md
 ```
-
----
-
-## 🔎 Final Conclusion & Recommendations
-
-### 📌 Insights
-
-- **Traffic Trends**: The **total visits** in January, February, and March 2017 showed consistent traffic, with March having the highest number of visits (69,931).
-- **Revenue by Source**: **Direct** traffic contributed significantly to revenue in June 2017, with notable contributions from **Google** and **Mail** sources, indicating strong performance from these channels.
-- **Bounce Rate Insights**: Traffic from sources like **phandroid.com** has a high bounce rate of **77.78%**, which suggests that users might not be engaging well with the content on landing pages.
-- **Purchaser Behavior**: Customers who bought the **"YouTube Men's Vintage Henley"** showed interest in related products like **Google Men's Vintage Badge Tee Black**, which presents an opportunity for cross-selling.
-
-### 📌 Recommendations
-
-1. **Optimize Landing Pages for High Bounce Traffic**: Improve pages for sources with high bounce rates (e.g., **phandroid.com**) by enhancing content relevance and reducing page load times.
-2. **Focus on Direct & Paid Traffic**: Increase investment in **Google Ads** and improve brand awareness to leverage high-performing **direct traffic** for better conversions.
-3. **Boost Conversion for Non-Purchasers**: Simplify the checkout process and offer targeted promotions to convert high-pageview, non-purchasing users.
-4. **Maximize Cross-Selling**: Use product recommendations for items like the **"YouTube Men's Vintage Henley"** to drive cross-sales and increase average order value.
